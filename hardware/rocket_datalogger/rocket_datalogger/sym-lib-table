@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "rocket_datalogger")(type "KiCad")(uri "${KIPRJMOD}/rocket_datalogger.kicad_sym")(options "")(descr ""))
+)
