@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -58,9 +58,9 @@
           "width": 0.0
         },
         {
-          "gap": 0.241,
-          "via_gap": 0.241,
-          "width": 0.2
+          "gap": 0.18,
+          "via_gap": 0.2,
+          "width": 0.33
         }
       ],
       "drc_exclusions": [],
@@ -688,10 +688,6 @@
     [
       "439f5b37-3873-4fdf-9d37-42bf545fa021",
       "Enviornmental Sensors"
-    ],
-    [
-      "f8f37d10-87ba-4177-9a91-b9e4738edda4",
-      "GPS Antenna Module"
     ],
     [
       "da5211e9-d38e-489d-b58f-220921eae81c",

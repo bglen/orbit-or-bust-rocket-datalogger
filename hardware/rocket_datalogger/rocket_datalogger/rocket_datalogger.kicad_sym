@@ -710,6 +710,24 @@
 				)
 			)
 			(pin unspecified line
+				(at 0 -19.05 90)
+				(length 2.54)
+				(name "EP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "EP1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
 				(at 2.54 16.51 270)
 				(length 2.54)
 				(hide yes)
@@ -828,7 +846,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "TPS63031DSKR"
 			(at 0 0 0)
 			(effects
 				(font

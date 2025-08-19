@@ -351,7 +351,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "rocket_datalogger:DAN-F10-00B"
 			(at 0 0 0)
 			(effects
 				(font
@@ -702,6 +702,24 @@
 					)
 				)
 				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 0 -19.05 90)
+				(length 2.54)
+				(name "EP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "EP1"
 					(effects
 						(font
 							(size 1.27 1.27)

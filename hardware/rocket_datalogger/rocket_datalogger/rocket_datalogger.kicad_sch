@@ -118,7 +118,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:USB_C_Receptacle_USB2.0_14P"
+		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
 				(offset 1.016)
 			)
@@ -133,7 +133,7 @@
 					)
 				)
 			)
-			(property "Value" "USB_C_Receptacle_USB2.0_14P"
+			(property "Value" "USB_C_Receptacle_USB2.0_16P"
 				(at 0 19.685 0)
 				(effects
 					(font
@@ -159,7 +159,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
+			(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -186,7 +186,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_0_0"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_0"
 				(rectangle
 					(start -0.254 -17.78)
 					(end 0.254 -16.764)
@@ -275,8 +275,30 @@
 						(type none)
 					)
 				)
+				(rectangle
+					(start 10.16 -12.446)
+					(end 9.144 -12.954)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -14.986)
+					(end 9.144 -15.494)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_0_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_1"
 				(rectangle
 					(start -10.16 17.78)
 					(end 10.16 -17.78)
@@ -477,7 +499,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_1_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_1_1"
 				(pin passive line
 					(at -7.62 -22.86 90)
 					(length 5.08)
@@ -747,6 +769,42 @@
 						)
 					)
 					(number "B6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -12.7 180)
+					(length 5.08)
+					(name "SBU1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -15.24 180)
+					(length 5.08)
+					(name "SBU2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1373,6 +1431,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3.3V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -1723,6 +1906,16 @@
 		)
 		(uuid "74a12d17-86e7-4aa7-814f-30c05b272b83")
 	)
+	(text "GPS needs 90 deg rotated PCB facing the sky for ideal placement"
+		(exclude_from_sim no)
+		(at 212.852 20.574 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "78eccbea-5aa2-486d-af1c-28816eec0674")
+	)
 	(text "Enviornmental Sensors"
 		(exclude_from_sim no)
 		(at 180.848 117.348 0)
@@ -1940,16 +2133,6 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 35.56) (xy 214.63 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d1d254c-e203-4673-be32-eddbd4641f24")
-	)
-	(wire
-		(pts
 			(xy 215.9 81.28) (xy 218.44 81.28)
 		)
 		(stroke
@@ -1977,6 +2160,16 @@
 			(type default)
 		)
 		(uuid "142e6445-a301-4560-a384-56fd67415c00")
+	)
+	(wire
+		(pts
+			(xy 223.52 33.02) (xy 226.06 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14492adb-966f-44de-adae-17281519c66b")
 	)
 	(wire
 		(pts
@@ -2060,6 +2253,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 38.1) (xy 226.06 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "335cbe61-d04b-4f92-bb0a-d0e7347daaef")
+	)
+	(wire
+		(pts
 			(xy 26.67 151.13) (xy 26.67 152.4)
 		)
 		(stroke
@@ -2110,6 +2313,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 35.56) (xy 226.06 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "435ecc6a-4e91-4a7f-b2d5-40fefdfa7954")
+	)
+	(wire
+		(pts
 			(xy 129.54 182.88) (xy 129.54 189.23)
 		)
 		(stroke
@@ -2140,16 +2353,6 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 38.1) (xy 214.63 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52ca8d3e-6aa1-4e50-8895-e6f71a86a114")
-	)
-	(wire
-		(pts
 			(xy 148.59 158.75) (xy 135.89 158.75)
 		)
 		(stroke
@@ -2170,6 +2373,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 45.72) (xy 226.06 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d1b8795-fab4-4cc8-b5de-673bb4cacafc")
+	)
+	(wire
+		(pts
 			(xy 215.9 142.24) (xy 218.44 142.24)
 		)
 		(stroke
@@ -2177,16 +2390,6 @@
 			(type default)
 		)
 		(uuid "5dc1cb85-e45a-46a9-a874-fe313e54d6e5")
-	)
-	(wire
-		(pts
-			(xy 212.09 33.02) (xy 214.63 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60fcccb5-8efa-40d9-b9ed-0e6c0a30e0a1")
 	)
 	(wire
 		(pts
@@ -2207,6 +2410,16 @@
 			(type default)
 		)
 		(uuid "67922d14-0b88-4845-9b4f-bb396d827370")
+	)
+	(wire
+		(pts
+			(xy 223.52 40.64) (xy 226.06 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69e676d6-428d-433c-894f-a710ba1c30a1")
 	)
 	(wire
 		(pts
@@ -2310,6 +2523,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 43.18) (xy 226.06 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9528cda7-4960-4cea-b956-8d3d2212fde5")
+	)
+	(wire
+		(pts
 			(xy 147.32 49.53) (xy 144.78 49.53)
 		)
 		(stroke
@@ -2327,6 +2550,16 @@
 			(type default)
 		)
 		(uuid "9c622051-6fe1-4cb7-81e1-5ddd435070df")
+	)
+	(wire
+		(pts
+			(xy 223.52 30.48) (xy 223.52 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0965806-101b-4ed6-92c2-49b845dc3a1a")
 	)
 	(wire
 		(pts
@@ -2490,6 +2723,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 45.72) (xy 223.52 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d51421f4-ed32-4be2-a030-48818dc651ce")
+	)
+	(wire
+		(pts
 			(xy 215.9 83.82) (xy 218.44 83.82)
 		)
 		(stroke
@@ -2517,16 +2760,6 @@
 			(type default)
 		)
 		(uuid "deca401d-40fa-41fd-b03e-c98070888e95")
-	)
-	(wire
-		(pts
-			(xy 212.09 30.48) (xy 214.63 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dfdc5706-0c78-48bd-8311-f90328b5fb0d")
 	)
 	(wire
 		(pts
@@ -2648,6 +2881,16 @@
 		)
 		(uuid "25258bf5-7524-48a1-998c-d7b068813394")
 	)
+	(label "UART_RX"
+		(at 223.52 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2a4ce9b7-0325-4be2-bcd6-4fcaa4c8b88c")
+	)
 	(label "SDA"
 		(at 147.32 41.91 0)
 		(effects
@@ -2728,16 +2971,6 @@
 		)
 		(uuid "8375f57f-41d5-4fbe-96c1-16637e30f7d0")
 	)
-	(label "UART_TX"
-		(at 212.09 35.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "83c93732-2041-4cc7-834b-29e538fb64eb")
-	)
 	(label "GPIO_0"
 		(at 113.03 151.13 180)
 		(effects
@@ -2747,16 +2980,6 @@
 			(justify right bottom)
 		)
 		(uuid "8e1266a8-3ac4-4c14-8a3b-3745bd095372")
-	)
-	(label "GPS_RESET"
-		(at 212.09 30.48 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "908cbcdc-7426-4cc7-897b-620aba7ed09f")
 	)
 	(label "GPIO_2"
 		(at 113.03 156.21 180)
@@ -2778,6 +3001,16 @@
 		)
 		(uuid "96bef715-8cbc-4467-8126-e2db5f655c3d")
 	)
+	(label "GPS_RESET"
+		(at 223.52 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b4ae6077-9276-4af2-be4d-802e047d8b4b")
+	)
 	(label "USB_D_P"
 		(at 55.88 125.73 0)
 		(effects
@@ -2787,16 +3020,6 @@
 			(justify left bottom)
 		)
 		(uuid "b77881ae-5812-41ba-8fa1-44664e7de150")
-	)
-	(label "GPS_TIMEPULSE"
-		(at 212.09 33.02 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ba3537f0-3534-47bb-a529-c90ea2b4d99d")
 	)
 	(label "IMU_INT"
 		(at 215.9 88.9 180)
@@ -2828,15 +3051,15 @@
 		)
 		(uuid "c26b7901-5c43-4aaa-8ab8-a229ac73ab27")
 	)
-	(label "UART_RX"
-		(at 212.09 38.1 180)
+	(label "UART_TX"
+		(at 223.52 43.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "cc73963d-1b8d-4849-8600-b092eb3f1a95")
+		(uuid "c401a043-0acf-4b31-a6ad-c4016e21234e")
 	)
 	(label "GPIO_2"
 		(at 147.32 59.69 0)
@@ -2897,6 +3120,16 @@
 			(justify left bottom)
 		)
 		(uuid "e9d838f0-6b2d-43f4-8367-e4ceb22d92fe")
+	)
+	(label "GPS_TIMEPULSE"
+		(at 223.52 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f2d1c6e3-22f4-48ba-abac-6eb5f42dbfb1")
 	)
 	(label "~IMU_RESET"
 		(at 147.32 69.85 0)
@@ -3751,33 +3984,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:USB_C_Receptacle_USB2.0_14P")
-		(at 34.29 128.27 0)
+		(lib_id "power:GND")
+		(at 223.52 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "501c9fd8-0629-47ab-b78d-f9a95504f45c")
-		(property "Reference" "J1"
-			(at 34.29 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "USB_C_Receptacle_USB2.0_14P"
-			(at 34.29 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
-			(at 38.1 128.27 0)
+		(uuid "50635e39-5795-40aa-b654-96c829c9cf43")
+		(property "Reference" "#PWR071"
+			(at 223.52 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3785,8 +4002,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
-			(at 38.1 128.27 0)
+		(property "Value" "GND"
+			(at 223.52 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3794,8 +4019,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
-			(at 34.29 128.27 0)
+		(property "Datasheet" ""
+			(at 223.52 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3803,55 +4028,22 @@
 				(hide yes)
 			)
 		)
-		(pin "B6"
-			(uuid "16fbae94-c5cc-4477-90d5-d2bcc38bef27")
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 223.52 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "A6"
-			(uuid "47bd05ee-d7bb-4be7-8086-e16bf3a66e22")
-		)
-		(pin "B4"
-			(uuid "0160a854-b0d0-4991-804d-10010b84b802")
-		)
-		(pin "A9"
-			(uuid "c781eae3-1167-4008-9581-c90bee77aba9")
-		)
-		(pin "B5"
-			(uuid "74760527-6a32-495d-b435-d370c781ba3d")
-		)
-		(pin "A1"
-			(uuid "c7f7ff11-e76f-45c9-9622-1e889692e843")
-		)
-		(pin "A12"
-			(uuid "188b38a5-f70e-4d88-baa9-6a3635dafa7f")
-		)
-		(pin "A7"
-			(uuid "65ff3ee1-f4af-44aa-bc58-2a48d49c9774")
-		)
-		(pin "A4"
-			(uuid "fc44a485-341a-4d86-969e-accade00d462")
-		)
-		(pin "B1"
-			(uuid "481267f9-7a3a-4b3b-a21e-0053a975827b")
-		)
-		(pin "B9"
-			(uuid "8ab3032d-72f8-47e1-bd74-3b0b1783b1b8")
-		)
-		(pin "S1"
-			(uuid "06e1fb4b-3150-49dc-b023-70fcd60b4eb7")
-		)
-		(pin "B12"
-			(uuid "7940dd9c-9d17-4ac9-95e1-76866c2e43e9")
-		)
-		(pin "B7"
-			(uuid "addf909a-0a47-4c72-8879-01ce03a16064")
-		)
-		(pin "A5"
-			(uuid "277de674-b28c-46ed-ade2-f37aaac0b1bb")
+		(pin "1"
+			(uuid "98272a5c-05f1-49d3-8391-cc374554b659")
 		)
 		(instances
-			(project "rocket_datalogger"
+			(project ""
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8"
-					(reference "J1")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -4050,6 +4242,88 @@
 			(project "rocket_datalogger"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x06")
+		(at 231.14 40.64 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8009b995-9beb-45a9-ba5d-1cf200a36d36")
+		(property "Reference" "J6"
+			(at 233.68 40.6401 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JST-PH-S6B-SM4_TB"
+			(at 233.68 38.1001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_PH_S6B-PH-SM4-TB_1x06-1MP_P2.00mm_Horizontal"
+			(at 231.14 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 231.14 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 231.14 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "0a3dd28f-176c-4400-83ee-e007b897ec73")
+		)
+		(pin "1"
+			(uuid "968cd4fc-4256-47ae-9bfb-a2c46980b629")
+		)
+		(pin "2"
+			(uuid "ed0c1ed9-584f-4d50-94b2-427579de4d14")
+		)
+		(pin "3"
+			(uuid "c8ce22a1-815b-4446-92c9-60c696caa395")
+		)
+		(pin "4"
+			(uuid "63e8a5dd-89e9-4b75-8f2f-0973568c7822")
+		)
+		(pin "5"
+			(uuid "5e5f6378-b319-46fc-8e50-8b1956f6f82c")
+		)
+		(instances
+			(project "rocket_datalogger"
+				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8"
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -4613,6 +4887,185 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 223.52 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8daf321-6f2a-493e-b81d-0383658b2374")
+		(property "Reference" "#PWR072"
+			(at 223.52 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 223.52 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 223.52 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e757d60-5b71-4875-b922-14f084544d73")
+		)
+		(instances
+			(project ""
+				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8"
+					(reference "#PWR072")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
+		(at 34.29 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fba7c3fd-6150-4225-bb10-571845995495")
+		(property "Reference" "J5"
+			(at 34.29 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USB_C_Receptacle_USB2.0_16P"
+			(at 34.29 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
+			(at 38.1 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+			(at 38.1 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+			(at 34.29 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "A12"
+			(uuid "7a0108ce-1e94-4382-8953-1bd01a5cfca5")
+		)
+		(pin "A4"
+			(uuid "9dec7e48-e16a-4b01-ba10-175e6d7e7d58")
+		)
+		(pin "A9"
+			(uuid "2171f17a-a4be-423b-8ac6-d5dcb402f4b7")
+		)
+		(pin "A6"
+			(uuid "cb80f42d-86cd-48e5-97b7-9f1ff7fc1e30")
+		)
+		(pin "B6"
+			(uuid "40a2fd1b-df18-4acc-aecc-7a7c4213313e")
+		)
+		(pin "A8"
+			(uuid "ed0fee48-9b4b-4be4-b5f1-d44d9df11744")
+		)
+		(pin "B8"
+			(uuid "5973f48e-4469-4cd6-aed9-76c77f2ae192")
+		)
+		(pin "A1"
+			(uuid "470bd415-b8c9-4997-a15e-17b333be5bbc")
+		)
+		(pin "B9"
+			(uuid "baae905e-67d4-490c-8cb4-a27d2e172cf7")
+		)
+		(pin "B1"
+			(uuid "f545a4f7-fa32-457d-a1d4-7cf109fe3362")
+		)
+		(pin "B4"
+			(uuid "1fc5328c-40f6-4d4c-8c7b-e64e240b4110")
+		)
+		(pin "S1"
+			(uuid "05b4b463-9eda-476d-81e3-947b868d5985")
+		)
+		(pin "A5"
+			(uuid "ad92c56b-c3dc-4b3b-a994-a2d32482cec8")
+		)
+		(pin "B5"
+			(uuid "93bec6a2-d198-4c1c-8295-6ac9465e1607")
+		)
+		(pin "A7"
+			(uuid "40fb743b-4c1d-4506-a11b-d18b90657b97")
+		)
+		(pin "B7"
+			(uuid "c9c31447-d16e-43fc-89c2-327ca4597a2e")
+		)
+		(pin "B12"
+			(uuid "cc05ae8e-c726-46e5-a7ba-9991f8687018")
+		)
+		(instances
+			(project ""
+				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet
 		(at 29.21 170.18)
 		(size 34.29 17.78)
@@ -4925,26 +5378,6 @@
 				(justify right)
 			)
 		)
-		(pin "UART_TX" output
-			(at 144.78 49.53 0)
-			(uuid "a71b2c87-19bb-4d69-8fb1-4a505aaa2f2b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "UART_RX" input
-			(at 144.78 52.07 0)
-			(uuid "077480bf-0232-4393-93d0-e86b1fe894c1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "GPS_RESET" output
 			(at 144.78 46.99 0)
 			(uuid "7865d44d-767f-4851-8919-3f4ef882e3be")
@@ -5035,92 +5468,30 @@
 				(justify right)
 			)
 		)
+		(pin "UART_MCU_TX" input
+			(at 144.78 49.53 0)
+			(uuid "b06c6e64-b24f-44eb-9aaf-557ffbf85ad2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "UART_MCU_RX" output
+			(at 144.78 52.07 0)
+			(uuid "3fb179bf-ee51-4964-9fc6-9f89235c1346")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "rocket_datalogger"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8"
 					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 214.63 27.94)
-		(size 44.45 13.97)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "f8f37d10-87ba-4177-9a91-b9e4738edda4")
-		(property "Sheetname" "GPS Antenna Module"
-			(at 214.63 27.2284 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "gps_antenna_module_dual_band.kicad_sch"
-			(at 214.63 42.4946 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "TIMEPULSE" output
-			(at 214.63 33.02 180)
-			(uuid "b6062f20-2bf2-46e8-8943-e173f4d07b8a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RESET_GPS" input
-			(at 214.63 30.48 180)
-			(uuid "0913e777-df2f-48eb-86d9-46edb44816ee")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "UART_MCU_RX" output
-			(at 214.63 38.1 180)
-			(uuid "e6199a22-5a32-4dc7-a114-0cf98b8921d3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "UART_MCU_TX" input
-			(at 214.63 35.56 180)
-			(uuid "8836d09d-50d8-4f4d-b594-694ff3720cc8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "rocket_datalogger"
-				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8"
-					(page "6")
 				)
 			)
 		)

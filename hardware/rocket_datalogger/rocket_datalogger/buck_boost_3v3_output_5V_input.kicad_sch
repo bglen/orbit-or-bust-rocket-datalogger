@@ -1284,7 +1284,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "TPS63031DSKR"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3284,7 +3284,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "TPS63031DSKR"
 			(at 146.05 85.09 0)
 			(effects
 				(font

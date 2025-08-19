@@ -610,6 +610,24 @@
 					)
 				)
 				(pin unspecified line
+					(at 0 -19.05 90)
+					(length 2.54)
+					(name "EP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "EP1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
 					(at 2.54 16.51 270)
 					(length 2.54)
 					(hide yes)
@@ -1182,6 +1200,9 @@
 		)
 		(pin "46"
 			(uuid "1efd8eb7-2e4b-4b8f-bc2d-756cac284bfb")
+		)
+		(pin "EP1"
+			(uuid "495003ae-7f2c-4bfe-b988-fb28b272980a")
 		)
 		(instances
 			(project ""
