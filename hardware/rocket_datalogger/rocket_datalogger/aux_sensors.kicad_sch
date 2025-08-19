@@ -956,6 +956,46 @@
 		)
 		(uuid "e19de0ae-e921-40d9-90ef-403999fdcbd1")
 	)
+	(text_box "- I2C Address: 0x76 (CSB is low)"
+		(exclude_from_sim no)
+		(at 27.94 139.7 0)
+		(size 21.59 16.51)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b5acbe70-7105-489e-a760-ba8fd328a8af")
+	)
+	(text_box "- I2C Address: 0x76 (CSB is low)"
+		(exclude_from_sim no)
+		(at 16.51 27.94 0)
+		(size 21.59 16.51)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "e609f3d7-dbb2-4f46-b6eb-4e7cbb2f9792")
+	)
 	(junction
 		(at 74.93 113.03)
 		(diameter 0)
@@ -987,12 +1027,6 @@
 		(uuid "9c19e155-3578-458f-b13a-1ccb3a15082b")
 	)
 	(junction
-		(at 95.25 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c62f10ed-6027-497a-85af-11d4d224e56c")
-	)
-	(junction
 		(at 138.43 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1016,6 +1050,10 @@
 		(color 0 0 0 0)
 		(uuid "fe275150-e9e4-4bd9-8497-48b3de7f6e8b")
 	)
+	(no_connect
+		(at 46.99 57.15)
+		(uuid "a1466ff6-9d24-428c-835c-2a3944eeb356")
+	)
 	(wire
 		(pts
 			(xy 138.43 133.35) (xy 163.83 133.35)
@@ -1028,17 +1066,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 113.03) (xy 104.14 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0809d2d1-7f54-4d75-a053-0da499dd54e5")
-	)
-	(wire
-		(pts
-			(xy 104.14 138.43) (xy 92.71 138.43)
+			(xy 95.25 138.43) (xy 92.71 138.43)
 		)
 		(stroke
 			(width 0)
@@ -1288,6 +1316,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 138.43) (xy 95.25 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad0db700-7226-4e99-a043-dae691319dee")
+	)
+	(wire
+		(pts
 			(xy 95.25 113.03) (xy 95.25 123.19)
 		)
 		(stroke
@@ -1418,16 +1456,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 113.03) (xy 104.14 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc08dd5f-9dca-4a81-b7f4-fdc4fd107c65")
-	)
-	(wire
-		(pts
 			(xy 138.43 127) (xy 138.43 133.35)
 		)
 		(stroke
@@ -1476,7 +1504,7 @@
 		)
 		(uuid "e692cfaf-47c5-41a0-b89b-e41fc3492e6b")
 	)
-	(hierarchical_label "SCL_3.3V"
+	(hierarchical_label "SCL"
 		(shape bidirectional)
 		(at 163.83 128.27 0)
 		(effects
@@ -1487,7 +1515,7 @@
 		)
 		(uuid "89166e21-f32a-4044-9252-e75f768cfff6")
 	)
-	(hierarchical_label "SDA_3.3V"
+	(hierarchical_label "SDA"
 		(shape bidirectional)
 		(at 163.83 133.35 0)
 		(effects
@@ -1508,7 +1536,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04fadca1-1855-467a-a0af-b7b68a62ba6b")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR048"
 			(at 74.93 115.57 0)
 			(effects
 				(font
@@ -1558,7 +1586,7 @@
 		(instances
 			(project "can_datalogger_board"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/439f5b37-3873-4fdf-9d37-42bf545fa021"
-					(reference "#PWR058")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -1580,7 +1608,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5020ff0c-a642-44db-b047-2aaa9006687a")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR042"
 			(at 36.83 116.84 0)
 			(effects
 				(font
@@ -1630,12 +1658,78 @@
 		(instances
 			(project "can_datalogger_board"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/439f5b37-3873-4fdf-9d37-42bf545fa021"
-					(reference "#PWR055")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
 			(project "can_datalogger_board"
 				(path "/83bde937-8f14-4c5d-82c0-88708257053a/f2cab74b-a323-47af-a2f3-cd0ef71f0dc8"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 95.25 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "56c99e15-27c1-4462-9c98-f1364a7a5963")
+		(property "Reference" "#PWR055"
+			(at 95.25 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 95.25 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc7bc835-4c8f-4c63-b698-46988597bf6b")
+		)
+		(instances
+			(project ""
+				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/439f5b37-3873-4fdf-9d37-42bf545fa021"
 					(reference "#PWR055")
 					(unit 1)
 				)
@@ -1740,7 +1834,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5dfd7b68-4e15-4d38-b12d-77f6033dd9b7")
-		(property "Reference" "C18"
+		(property "Reference" "C19"
 			(at 72.39 41.9162 0)
 			(effects
 				(font
@@ -1794,7 +1888,7 @@
 		(instances
 			(project ""
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/439f5b37-3873-4fdf-9d37-42bf545fa021"
-					(reference "C18")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -1810,7 +1904,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "67a6f091-d89b-4fe7-93c0-ac13f07720d5")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR045"
 			(at 57.15 41.91 0)
 			(effects
 				(font
@@ -1860,7 +1954,7 @@
 		(instances
 			(project ""
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/439f5b37-3873-4fdf-9d37-42bf545fa021"
-					(reference "#PWR03")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -1876,7 +1970,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6fd2bb3d-09b4-4c78-bd1d-08307bf84da0")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR047"
 			(at 69.85 53.34 0)
 			(effects
 				(font
@@ -1926,7 +2020,7 @@
 		(instances
 			(project "rocket_datalogger"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/439f5b37-3873-4fdf-9d37-42bf545fa021"
-					(reference "#PWR035")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -1942,7 +2036,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "72521cd8-2b14-47fa-b827-68696ebd8f10")
-		(property "Reference" "C17"
+		(property "Reference" "C18"
 			(at 50.8 119.3862 0)
 			(effects
 				(font
@@ -1996,7 +2090,7 @@
 		(instances
 			(project "can_datalogger_board"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/439f5b37-3873-4fdf-9d37-42bf545fa021"
-					(reference "C17")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -2018,7 +2112,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b7b6c32-d0aa-481a-b8e1-070565d37695")
-		(property "Reference" "U8"
+		(property "Reference" "U5"
 			(at 66.04 129.5399 0)
 			(effects
 				(font
@@ -2090,7 +2184,7 @@
 		(instances
 			(project "can_datalogger_board"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/439f5b37-3873-4fdf-9d37-42bf545fa021"
-					(reference "U8")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -2112,7 +2206,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92d2ce3a-5857-4624-a3e0-b599b9ed318b")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR049"
 			(at 74.93 157.48 0)
 			(effects
 				(font
@@ -2162,7 +2256,7 @@
 		(instances
 			(project "can_datalogger_board"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/439f5b37-3873-4fdf-9d37-42bf545fa021"
-					(reference "#PWR059")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -2184,7 +2278,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a05c394e-c63d-44e6-97dc-424458823514")
-		(property "Reference" "C16"
+		(property "Reference" "C17"
 			(at 39.37 119.3862 0)
 			(effects
 				(font
@@ -2238,7 +2332,7 @@
 		(instances
 			(project "can_datalogger_board"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/439f5b37-3873-4fdf-9d37-42bf545fa021"
-					(reference "C16")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -2260,7 +2354,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aa94292b-8610-4cd4-bbb5-e0958ffab25b")
-		(property "Reference" "TP9"
+		(property "Reference" "TP5"
 			(at 127 122.4279 0)
 			(effects
 				(font
@@ -2311,7 +2405,7 @@
 		(instances
 			(project ""
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/439f5b37-3873-4fdf-9d37-42bf545fa021"
-					(reference "TP9")
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -2333,7 +2427,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6724c21-6c3e-40fe-8be2-78f972fc9666")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR043"
 			(at 36.83 132.08 0)
 			(effects
 				(font
@@ -2383,7 +2477,7 @@
 		(instances
 			(project "can_datalogger_board"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/439f5b37-3873-4fdf-9d37-42bf545fa021"
-					(reference "#PWR056")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -2405,7 +2499,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df3f37f7-8de8-4314-8ab2-974272c0e5e2")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR046"
 			(at 57.15 83.82 0)
 			(effects
 				(font
@@ -2455,7 +2549,7 @@
 		(instances
 			(project ""
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/439f5b37-3873-4fdf-9d37-42bf545fa021"
-					(reference "#PWR019")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -2471,7 +2565,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e121341b-1214-4759-b903-43bc98eda236")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR044"
 			(at 48.26 132.08 0)
 			(effects
 				(font
@@ -2521,7 +2615,7 @@
 		(instances
 			(project "can_datalogger_board"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/439f5b37-3873-4fdf-9d37-42bf545fa021"
-					(reference "#PWR057")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -2543,7 +2637,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4057cf4-c999-4287-ba5c-5895825027d3")
-		(property "Reference" "TP10"
+		(property "Reference" "TP6"
 			(at 140.97 122.4279 0)
 			(effects
 				(font
@@ -2594,7 +2688,7 @@
 		(instances
 			(project "can_datalogger_board"
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/439f5b37-3873-4fdf-9d37-42bf545fa021"
-					(reference "TP10")
+					(reference "TP6")
 					(unit 1)
 				)
 			)
