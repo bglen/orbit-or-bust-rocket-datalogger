@@ -14,7 +14,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "ADCL375"
 			(at 0 0 0)
 			(effects
 				(font
@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_LGA:LGA-14_3x5mm_P0.8mm_LayoutBorder1x6y"
 			(at 0 0 0)
 			(effects
 				(font
@@ -89,7 +89,7 @@
 			(pin power_in line
 				(at -3.81 13.97 270)
 				(length 2.54)
-				(name "VSS"
+				(name "Vs"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -343,7 +343,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "DAN-F10N-00B"
 			(at 0 0 0)
 			(effects
 				(font
@@ -802,7 +802,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "TPS63031DSKR"
 			(at 0 0 0)
 			(effects
 				(font
@@ -810,7 +810,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "rocket_datalogger:DSK0010A"
 			(at 0 0 0)
 			(effects
 				(font

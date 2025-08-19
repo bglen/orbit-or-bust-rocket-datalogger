@@ -722,142 +722,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_SPST"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_SPST"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Single Pole Single Throw (SPST) switch"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch lever"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_SPST_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 0.254) (xy 1.524 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_SPST_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -1394,7 +1258,7 @@
 					)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "TPS63031DSKR"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1402,7 +1266,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "rocket_datalogger:DSK0010A"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1780,7 +1644,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 80.01) (xy 80.01 80.01)
+			(xy 86.36 80.01) (xy 95.25 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1987,16 +1851,6 @@
 			(type default)
 		)
 		(uuid "7c9954d2-04f1-4966-bac7-1ddf052bdefa")
-	)
-	(wire
-		(pts
-			(xy 90.17 80.01) (xy 95.25 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d5e7340-af07-4e4d-8a64-d2c4518bd439")
 	)
 	(wire
 		(pts
@@ -2306,7 +2160,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 76.2 80.01 90)
+		(at 86.36 80.01 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2315,7 +2169,7 @@
 		(fields_autoplaced yes)
 		(uuid "0e2f8e4a-0769-48fd-a82c-bd3de984943f")
 		(property "Reference" "#PWR024"
-			(at 80.01 80.01 0)
+			(at 90.17 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2324,7 +2178,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 72.39 80.0099 90)
+			(at 82.55 80.0099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2333,7 +2187,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 80.01 0)
+			(at 86.36 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2342,7 +2196,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 80.01 0)
+			(at 86.36 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2351,7 +2205,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 76.2 80.01 0)
+			(at 86.36 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2862,7 +2716,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Coilcraft_LPS3010"
 			(at 146.05 64.77 0)
 			(effects
 				(font
@@ -3036,74 +2890,6 @@
 			(project ""
 				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/6c66699f-236e-4731-b034-8ba482d124c5"
 					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 85.09 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "870969f5-ed79-47ad-939f-76639597274a")
-		(property "Reference" "SW1"
-			(at 85.09 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPST"
-			(at 85.09 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 85.09 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 85.09 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 85.09 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ad36e2dc-3bae-4043-b07a-eb3d3dc6a122")
-		)
-		(pin "1"
-			(uuid "a07cf91b-c800-4045-9417-7b7aa8001ad6")
-		)
-		(instances
-			(project ""
-				(path "/742f64ac-c4d8-4561-a2a9-e0e3f6f67ce8/6c66699f-236e-4731-b034-8ba482d124c5"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -3480,7 +3266,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "rocket_datalogger:DSK0010A"
 			(at 146.05 85.09 0)
 			(effects
 				(font

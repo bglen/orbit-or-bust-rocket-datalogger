@@ -1281,7 +1281,7 @@
 					)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "ADCL375"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1289,7 +1289,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_LGA:LGA-14_3x5mm_P0.8mm_LayoutBorder1x6y"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1623,9 +1623,9 @@
 		)
 		(uuid "9a8bd265-4b79-4d77-a3e8-51de2955a1be")
 	)
-	(text "500 - 700 mV amplituide"
+	(text "32.768 kHz, 12.5 pF, 70 kOhm"
 		(exclude_from_sim no)
-		(at 152.4 132.08 0)
+		(at 150.368 130.302 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1680,6 +1680,12 @@
 		(uuid "1391b0f9-4a20-44c6-a2d3-a5b5e14b8915")
 	)
 	(junction
+		(at 147.32 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "177c1ffd-b26b-442e-9ec2-c382e8d6b73c")
+	)
+	(junction
 		(at 90.17 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1708,12 +1714,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b06b18f7-d632-458e-8223-1197e0b83a55")
-	)
-	(junction
-		(at 138.43 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b306f5ae-1b82-4650-a7c1-f509c4019337")
 	)
 	(junction
 		(at 90.17 72.39)
@@ -1813,7 +1813,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 125.73) (xy 138.43 138.43)
+			(xy 147.32 125.73) (xy 147.32 138.43)
 		)
 		(stroke
 			(width 0)
@@ -1873,7 +1873,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 125.73) (xy 138.43 125.73)
+			(xy 132.08 125.73) (xy 147.32 125.73)
 		)
 		(stroke
 			(width 0)
@@ -2343,7 +2343,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 138.43) (xy 132.08 138.43)
+			(xy 132.08 138.43) (xy 147.32 138.43)
 		)
 		(stroke
 			(width 0)
@@ -2373,7 +2373,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 139.7) (xy 138.43 138.43)
+			(xy 147.32 139.7) (xy 147.32 138.43)
 		)
 		(stroke
 			(width 0)
@@ -3033,7 +3033,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "32.768 kHz"
+		(property "Value" "ECX-.327-CDX-1293"
 			(at 125.73 133.3499 90)
 			(effects
 				(font
@@ -3042,7 +3042,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm"
 			(at 121.92 132.08 0)
 			(effects
 				(font
@@ -3218,7 +3218,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 138.43 139.7 0)
+		(at 147.32 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3227,7 +3227,7 @@
 		(fields_autoplaced yes)
 		(uuid "5896de96-828e-40fa-b353-b1ed0a7d85bc")
 		(property "Reference" "#PWR070"
-			(at 138.43 146.05 0)
+			(at 147.32 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3236,7 +3236,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 138.43 144.78 0)
+			(at 147.32 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3244,7 +3244,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 138.43 139.7 0)
+			(at 147.32 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3253,7 +3253,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 138.43 139.7 0)
+			(at 147.32 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3262,7 +3262,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 138.43 139.7 0)
+			(at 147.32 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4193,7 +4193,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_LGA:LGA-14_3x5mm_P0.8mm_LayoutBorder1x6y"
 			(at 93.98 55.88 0)
 			(effects
 				(font

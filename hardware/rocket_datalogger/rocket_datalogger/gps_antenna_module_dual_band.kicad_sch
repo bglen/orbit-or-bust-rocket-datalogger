@@ -243,7 +243,7 @@
 					)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "DAN-F10N-00B"
 				(at 0 0 0)
 				(effects
 					(font
@@ -251,7 +251,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "rocket_datalogger:DAN-F10-00B"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1093,7 +1093,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "rocket_datalogger:DAN-F10-00B"
 			(at 148.59 95.25 0)
 			(effects
 				(font
