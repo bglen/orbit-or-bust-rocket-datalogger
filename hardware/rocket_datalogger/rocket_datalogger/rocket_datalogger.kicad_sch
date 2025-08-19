@@ -1893,6 +1893,17 @@
 		)
 		(uuid "277bc927-4a6e-412c-8c98-c3eceacd432c")
 	)
+	(text "Mating Connector: PHR-6\nPre-crimped leads: ASPHSPH24K152 (6\" 24 AWG tin)"
+		(exclude_from_sim no)
+		(at 224.282 47.752 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "34f39d4f-fa58-477a-b94f-4dc7b7141d09")
+	)
 	(text "Power Supply"
 		(exclude_from_sim no)
 		(at 15.748 90.678 0)
@@ -2163,7 +2174,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 33.02) (xy 226.06 33.02)
+			(xy 198.12 33.02) (xy 200.66 33.02)
 		)
 		(stroke
 			(width 0)
@@ -2253,7 +2264,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 38.1) (xy 226.06 38.1)
+			(xy 198.12 38.1) (xy 200.66 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2313,7 +2324,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 35.56) (xy 226.06 35.56)
+			(xy 198.12 35.56) (xy 200.66 35.56)
 		)
 		(stroke
 			(width 0)
@@ -2373,7 +2384,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 45.72) (xy 226.06 45.72)
+			(xy 198.12 45.72) (xy 200.66 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2413,7 +2424,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 40.64) (xy 226.06 40.64)
+			(xy 198.12 40.64) (xy 200.66 40.64)
 		)
 		(stroke
 			(width 0)
@@ -2523,7 +2534,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 43.18) (xy 226.06 43.18)
+			(xy 198.12 43.18) (xy 200.66 43.18)
 		)
 		(stroke
 			(width 0)
@@ -2553,7 +2564,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 30.48) (xy 223.52 33.02)
+			(xy 198.12 30.48) (xy 198.12 33.02)
 		)
 		(stroke
 			(width 0)
@@ -2723,7 +2734,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 45.72) (xy 223.52 48.26)
+			(xy 198.12 45.72) (xy 198.12 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2882,7 +2893,7 @@
 		(uuid "25258bf5-7524-48a1-998c-d7b068813394")
 	)
 	(label "UART_RX"
-		(at 223.52 40.64 180)
+		(at 198.12 40.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3002,7 +3013,7 @@
 		(uuid "96bef715-8cbc-4467-8126-e2db5f655c3d")
 	)
 	(label "GPS_RESET"
-		(at 223.52 35.56 180)
+		(at 198.12 35.56 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3052,7 +3063,7 @@
 		(uuid "c26b7901-5c43-4aaa-8ab8-a229ac73ab27")
 	)
 	(label "UART_TX"
-		(at 223.52 43.18 180)
+		(at 198.12 43.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3122,7 +3133,7 @@
 		(uuid "e9d838f0-6b2d-43f4-8367-e4ceb22d92fe")
 	)
 	(label "GPS_TIMEPULSE"
-		(at 223.52 38.1 180)
+		(at 198.12 38.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3985,7 +3996,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 223.52 48.26 0)
+		(at 198.12 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3994,7 +4005,7 @@
 		(fields_autoplaced yes)
 		(uuid "50635e39-5795-40aa-b654-96c829c9cf43")
 		(property "Reference" "#PWR071"
-			(at 223.52 54.61 0)
+			(at 198.12 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4003,7 +4014,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 223.52 53.34 0)
+			(at 198.12 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4011,7 +4022,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 223.52 48.26 0)
+			(at 198.12 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4020,7 +4031,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 48.26 0)
+			(at 198.12 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4029,7 +4040,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 223.52 48.26 0)
+			(at 198.12 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4249,7 +4260,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
-		(at 231.14 40.64 0)
+		(at 205.74 40.64 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4258,7 +4269,7 @@
 		(dnp no)
 		(uuid "8009b995-9beb-45a9-ba5d-1cf200a36d36")
 		(property "Reference" "J6"
-			(at 233.68 40.6401 0)
+			(at 208.28 40.6401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4267,7 +4278,7 @@
 			)
 		)
 		(property "Value" "JST-PH-S6B-SM4_TB"
-			(at 233.68 38.1001 0)
+			(at 208.28 38.1001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4276,7 +4287,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_PH_S6B-PH-SM4-TB_1x06-1MP_P2.00mm_Horizontal"
-			(at 231.14 40.64 0)
+			(at 205.74 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4285,7 +4296,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 40.64 0)
+			(at 205.74 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4294,7 +4305,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 231.14 40.64 0)
+			(at 205.74 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4889,7 +4900,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 223.52 30.48 0)
+		(at 198.12 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4898,7 +4909,7 @@
 		(fields_autoplaced yes)
 		(uuid "f8daf321-6f2a-493e-b81d-0383658b2374")
 		(property "Reference" "#PWR072"
-			(at 223.52 34.29 0)
+			(at 198.12 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4907,7 +4918,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 223.52 25.4 0)
+			(at 198.12 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4915,7 +4926,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 223.52 30.48 0)
+			(at 198.12 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4924,7 +4935,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 30.48 0)
+			(at 198.12 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4933,7 +4944,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 223.52 30.48 0)
+			(at 198.12 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
