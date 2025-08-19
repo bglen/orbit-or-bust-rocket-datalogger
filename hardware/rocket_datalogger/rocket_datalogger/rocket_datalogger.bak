@@ -929,7 +929,7 @@
 				)
 			)
 			(pin unspecified line
-				(at 0 -15.24 90)
+				(at 0 -16.51 90)
 				(length 2.54)
 				(name "EP"
 					(effects
@@ -1049,6 +1049,14 @@
 				)
 				(fill
 					(type background)
+				)
+			)
+			(text "TPS63031DSKR"
+				(at 0.254 14.224 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
 		)

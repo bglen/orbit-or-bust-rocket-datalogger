@@ -2420,6 +2420,26 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 72.39) (xy 144.78 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c220a144-10fb-499c-ba85-c9942dfce390")
+	)
+	(wire
+		(pts
+			(xy 215.9 88.9) (xy 218.44 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2229dc7-dc22-4379-94e2-09a0ce30d27c")
+	)
+	(wire
+		(pts
 			(xy 34.29 152.4) (xy 34.29 154.94)
 		)
 		(stroke
@@ -2788,6 +2808,16 @@
 		)
 		(uuid "ba3537f0-3534-47bb-a529-c90ea2b4d99d")
 	)
+	(label "IMU_INT"
+		(at 215.9 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bb7cd269-cd55-4399-a337-028c566fc774")
+	)
 	(label "GPIO_4"
 		(at 113.03 161.29 180)
 		(effects
@@ -2887,6 +2917,16 @@
 			(justify left bottom)
 		)
 		(uuid "f2e580bc-b863-462e-9962-0ccf010e2184")
+	)
+	(label "IMU_INT"
+		(at 147.32 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f46dd5ba-8095-46cf-8248-bed0ce1f14ce")
 	)
 	(label "UART_TX"
 		(at 147.32 49.53 0)
@@ -3615,7 +3655,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 59.69 111.76 0)
 			(effects
 				(font
@@ -4053,7 +4093,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 72.39 124.46 0)
 			(effects
 				(font
@@ -4477,7 +4517,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 81.28 124.46 0)
 			(effects
 				(font
@@ -4731,7 +4771,7 @@
 	)
 	(sheet
 		(at 218.44 78.74)
-		(size 25.4 10.16)
+		(size 25.4 13.97)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4755,7 +4795,7 @@
 			)
 		)
 		(property "Sheetfile" "imu.kicad_sch"
-			(at 218.44 89.4846 0)
+			(at 218.44 93.2946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4786,6 +4826,16 @@
 		(pin "~IMU_RESET" input
 			(at 218.44 86.36 180)
 			(uuid "8270a995-c657-4f67-8d53-f3367bd3fcf9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IMU_INT" output
+			(at 218.44 88.9 180)
+			(uuid "81b0ff1c-9e6a-4029-8c7c-fd6a7b1ffb8f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4978,6 +5028,16 @@
 		(pin "~IMU_RESET" input
 			(at 144.78 69.85 0)
 			(uuid "d7940335-55bc-4760-94da-06708ba074f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IMU_INT" input
+			(at 144.78 72.39 0)
+			(uuid "9dff5454-3ecb-49fa-ac3c-29898f7462e4")
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -3850,10 +3850,6 @@
 		(uuid "93625d7f-6a35-49b8-9b6c-0a8bc4297ea0")
 	)
 	(no_connect
-		(at 227.33 100.33)
-		(uuid "bbe7b8ab-becd-4c51-92e4-873cf5025fac")
-	)
-	(no_connect
 		(at 201.93 100.33)
 		(uuid "c1576135-156b-461c-9917-6752acc22514")
 	)
@@ -4643,6 +4639,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 100.33) (xy 229.87 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf1c6818-04be-4b1e-ae82-d3ad1f1ae5cf")
+	)
+	(wire
+		(pts
 			(xy 227.33 69.85) (xy 229.87 69.85)
 		)
 		(stroke
@@ -5160,6 +5166,17 @@
 			(justify left)
 		)
 		(uuid "b713877b-a424-4477-8ccd-6b58725e1fdf")
+	)
+	(hierarchical_label "IMU_INT"
+		(shape input)
+		(at 229.87 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c168a5db-b805-47b0-b0df-6793dabddd28")
 	)
 	(hierarchical_label "USB_D_N"
 		(shape bidirectional)
@@ -6878,7 +6895,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 257.81 77.47 0)
 			(effects
 				(font
@@ -7921,7 +7938,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 261.62 77.47 0)
 			(effects
 				(font
