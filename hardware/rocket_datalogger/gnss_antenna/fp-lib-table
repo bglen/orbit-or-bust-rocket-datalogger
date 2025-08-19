@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "rocket_datalogger")(type "KiCad")(uri "/Users/bglen/Documents/github/orbit-or-bust-rocket-datalogger/hardware/rocket_datalogger/rocket_datalogger/rocket_datalogger.pretty")(options "")(descr ""))
+)
